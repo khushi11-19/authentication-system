@@ -21,7 +21,7 @@ const SignUp = () => {
       }
     };
     authenticate();
-  }, []);
+  }, [router]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,7 +29,7 @@ const SignUp = () => {
 
     axios
       .post(`${baseURL}/signup`, payload)
-      .then((res) => {
+      .then(() => {
         toast.success(
           <div>
             Account Created Successfully <br />

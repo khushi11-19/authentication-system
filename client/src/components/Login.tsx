@@ -22,7 +22,7 @@ const Login = () => {
       }
     };
     authenticate();
-  }, []);
+  }, [router]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -74,7 +74,7 @@ const Login = () => {
         </form>
 
         <p className="mt-4 text-center text-sm text-gray-600">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link href="/signup" className="text-purple-600 hover:underline">
             Sign up
           </Link>
