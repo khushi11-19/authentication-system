@@ -28,7 +28,7 @@ const SignUp = () => {
     const payload = { name, email, password };
 
     axios
-      .post(`${baseURL}/signup`, payload)
+      .post(`${baseURL}/api/signup`, payload)
       .then(() => {
         toast.success(
           <div>
